@@ -1,7 +1,7 @@
 // const generateNewsletter = require('./newsletter_generator');
 import {hello} from './newsletter_generator.js';
 document.addEventListener("DOMContentLoaded", function () {
-    const apiUrl = 'https://718e-43-248-153-114.ngrok.io/scrape';
+    const apiUrl = 'https://609b-43-248-153-114.ngrok.io/scrape';
     const myForm = document.getElementById("myForm");
 
     myForm.addEventListener("submit", function (event) {
