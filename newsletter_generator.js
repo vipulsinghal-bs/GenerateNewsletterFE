@@ -26,13 +26,24 @@ export async function hello(data) {
         name: newsletterData.name,
       };
   
+      let imgElement = '';
+    if (data.imgSrc !== null) {
+      imgElement = `<img src="${data.imgSrc}" alt="Avatar" style="width:200px" class="center-img">`;
+    }
+
       // Render the content section template with data using template literals
       const renderedContent = `
-        <div class="card">
+      <div class="card">
           <div class="container">
-          <img src="${data.imgSrc}" alt="Avatar" style="width:400px" class="center-img">
-          <h4><b>${data.name}</b></h4>
-            <p>${data.text}</p>
+            <div class="row">
+              <div class="column" style="background-color:#aaa;">
+              <h4><b>${data.name}</b></h4>
+              <p>${data.text}</p>
+              </div>
+              <div class="column" style="background-color:#bbb;">
+              ${imgElement}
+              </div>
+            </div>
           </div>
         </div>
         <br>
