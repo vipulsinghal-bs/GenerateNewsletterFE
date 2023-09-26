@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
          const requestOptions = {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
               'Content-Type': 'application/json',
               // You may need to add other headers like authorization tokens here
