@@ -36,11 +36,11 @@ export async function hello(data) {
       <div class="card">
           <div class="container">
             <div class="row">
-              <div class="column" style="background-color:#aaa;">
+              <div class="column">
               <h4><b>${data.name}</b></h4>
               <p>${data.text}</p>
               </div>
-              <div class="column" style="background-color:#bbb;">
+              <div class="column">
               ${imgElement}
               </div>
             </div>
